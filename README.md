@@ -6,4 +6,8 @@ git config --global user.name "your user name"
 
 #command to create environment
 
-conda create -p env_name python=3.8 -y
+conda create -m env_name python=3.8 -y
+
+conda activate env_name
+
+pip install -r requirements.txt (installing the requiremetns)
