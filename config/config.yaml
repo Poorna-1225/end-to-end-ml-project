@@ -1,0 +1,12 @@
+artifacts_root: artifacts  #artifacts_root is key and aerifacts is the value.
+# this is a keypair value of a dictionary. 
+#yaml file stores the values as keypair. to access the values we need keys. 
+#the functionality is similar to a python dictionary
+# we don't need to specify any data structure of the variable
+
+
+data_ingestion:
+  root_dir : artifacts/data_ingestion  # this is the directory in which out dataset gets stored once downloading it from github
+  source_url: https://github.com/Poorna-1225/text-classification-nlp/raw/main/winequality-red.zip # after uplaoding the file in any of the repositories open the dataset and then righ click on view raw and copy the link adress and paste it here asa the sourc url
+  local_data_file: artifacts/data_ingestion/data.zip # the file which is downloaded from github is stored in local machine with the name data.zip in the directory artifacts/data_ingestion
+  unzip_dir : artifacts/data_ingestion #after unziping the zip file the dataset gets stored in this directory.
