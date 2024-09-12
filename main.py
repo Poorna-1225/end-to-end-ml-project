@@ -1,4 +1,13 @@
-from src.mlProject.constants import *
+from mlProject import logger
+from mlProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 
-print(CONFIG_FILE_PATH)
+STAGE_NAME = "Data Ingestion Stage"
+try:
+    logger.info(f'>>>>> stage {STAGE_NAME} started <<<<<')
+    data_ingestion = DataIngestionTrainingPipeline()
+    data_ingestion.main()
+    logger.info(f'>>>>> stage {STAGE_NAME} completed <<<<<\n\nx==========')
 
+except Exception as e:
+    logger.exception(e)
+    raise e
