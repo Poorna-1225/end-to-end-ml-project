@@ -1,3 +1,4 @@
-from src.mlProject import logger
+from src.mlProject.constants import *
 
-logger.info('this is custom log message')
+print(CONFIG_FILE_PATH)
+

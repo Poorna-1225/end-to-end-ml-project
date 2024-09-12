@@ -14,14 +14,14 @@ pip install -r requirements.txt (installing the requiremetns)
 
 # we are using ConfigBox to access the content or values in the form of dictionary (see the usage of configbox in common.py)
 
-#projct workflows
+#data ingestion workflow
 
 1.update config.yaml
 2.update schema.yaml
 3.update params.yaml
-4.update the entity
+4.update the entity (config_entity)
 5.update the configuration manager in src config
 6.update the components
-7.update the components
+7.update the pipeline
 8.update main.py
 9.update app.py
