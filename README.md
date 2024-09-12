@@ -25,3 +25,6 @@ pip install -r requirements.txt (installing the requiremetns)
 7.update the pipeline
 8.update main.py
 9.update app.py
+
+#Data validation:
+in data validation we check if all the column names and data types are same as csv file.  we create a schemal.yaml file and enter all the column names along with their data type.

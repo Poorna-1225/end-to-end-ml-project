@@ -11,3 +11,10 @@ data_ingestion:
   source_url: https://github.com/Poorna-1225/text-classification-nlp/raw/main/winequality-red.zip # after uplaoding the file in any of the repositories open the dataset and then righ click on view raw and copy the link adress and paste it here asa the sourc url
   local_data_file: artifacts/data_ingestion/data.zip # the file which is downloaded from github is stored in local machine with the name data.zip in the directory artifacts/data_ingestion
   unzip_dir : artifacts/data_ingestion #after unziping the zip file the dataset gets stored in this directory.
+
+data_validation:
+  root_dir : artifacts/data_validation 
+  unzip_data_dir: artifacts/data_ingestion/winequality-red.csv
+  STATUS_FILE: artifacts/data_validation/status.txt
+
+
