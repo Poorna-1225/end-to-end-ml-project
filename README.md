@@ -14,8 +14,7 @@ pip install -r requirements.txt (installing the requiremetns)
 
 # we are using ConfigBox to access the content or values in the form of dictionary (see the usage of configbox in common.py)
 
-#data ingestion workflow
-
+#each component workflow
 1.update config.yaml
 2.update schema.yaml
 3.update params.yaml
@@ -28,3 +27,7 @@ pip install -r requirements.txt (installing the requiremetns)
 
 #Data validation:
 in data validation we check if all the column names and data types are same as csv file.  we create a schemal.yaml file and enter all the column names along with their data type.
+
+# data transformation
+we are performing train test split. we access the dataset and perform train_test_split.
+As we are considering the well organized dataset, i'm not performing any of th eda on this dataset.

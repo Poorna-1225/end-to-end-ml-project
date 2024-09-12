@@ -2,6 +2,8 @@ from mlProject.constants import *
 from mlProject.utils.common import *
 from mlProject.entity.config_entity import DataIngestionConfig
 from mlProject.entity.config_entity import DataValidationConfig
+from mlProject.entity.config_entity import DataTransformationConfig
+
 
 
 """
@@ -65,3 +67,25 @@ class ConfigurationManager:
             all_schema = schema
         )
         return data_validation_config
+
+
+
+
+class ConfigurationManager:
+    def __init__(self):
+        self.config = read_yaml(CONFIG_FILE_PATH)
+        self.params =  read_yaml(PARAMS_FILE_PATH)
+        self.schema = read_yaml(SCHEMA_FILE_PATH)
+
+        create_directories([self.config.artifacts_root])
+
+    def get_data_transformation_config(self)->DataTransformationConfig:
+        config = self.config.data_transformation
+
+        create_directories([config.root_dir])
+        data_transformation_config = DataTransformationConfig(
+            root_dir= config.root_dir,
+            data_path= config.data_path,
+        )
+        return data_transformation_config
+    
