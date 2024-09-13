@@ -25,9 +25,16 @@ pip install -r requirements.txt (installing the requiremetns)
 8.update main.py
 9.update app.py
 
-#Data validation:
+# Data validation:
 in data validation we check if all the column names and data types are same as csv file.  we create a schemal.yaml file and enter all the column names along with their data type.
 
 # data transformation
 we are performing train test split. we access the dataset and perform train_test_split.
 As we are considering the well organized dataset, i'm not performing any of th eda on this dataset.
+
+
+# Model trainer
+we dividie the trainig and testing data into .75,0.25 ratio and then we train the elasticnet model importing it from sklearn.linear_model
+
+# model evolution
+after training the model we evaluate the model using metrics like 
