@@ -7,7 +7,7 @@ from mlProject.pipeline.stage_05_model_evalution import ModelEvaluationTrainingP
 
 
 
-"""STAGE_NAME = "Data Ingestion Stage"
+STAGE_NAME = "Data Ingestion Stage"
 try:
     logger.info(f'>>>>> stage {STAGE_NAME} started <<<<<')
     data_ingestion = DataIngestionTrainingPipeline()
@@ -55,7 +55,7 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-"""
+
 
 
 STAGE_NAME = "Model evaluation stage"
