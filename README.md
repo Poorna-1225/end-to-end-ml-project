@@ -62,7 +62,7 @@ after training the model we evaluate the model using metrics like
     2. AmazonEC2FullAccess
 
 3. Create ECR repo to store/save docker image
-     - Save the URI: 136566696263.dkr.ecr.us-east-1.amazonaws.com/mlproject
+     872515257615.dkr.ecr.us-east-1.amazonaws.com/mlproject
 
 4. create EC2 machine(Ubuntu)
 5. Open EC2 and install docker in EC2 machine:
