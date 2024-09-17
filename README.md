@@ -62,10 +62,11 @@ after training the model we evaluate the model using metrics like
     2. AmazonEC2FullAccess
 
 3. Create ECR repo to store/save docker image
-     872515257615.dkr.ecr.us-east-1.amazonaws.com/mlproject
 
-4. create EC2 machine(Ubuntu)
-5. Open EC2 and install docker in EC2 machine:
+   872515257615.dkr.ecr.us-east-1.amazonaws.com/mlproject
+
+5. create EC2 machine(Ubuntu)
+6. Open EC2 and install docker in EC2 machine:
     #optinal
 
     sudo apt-get update -y
@@ -81,9 +82,9 @@ after training the model we evaluate the model using metrics like
     sudo usermod -aG docker ubuntu
 
     newgrp docker
-6. configure EC2 as self-hosted runner
+7. configure EC2 as self-hosted runner
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
-7. setup github secrets:
+8. setup github secrets:
     AWS_ACCESS_KEY_ID=
 
     AWS_SECRET_ACCESS_KEY=
